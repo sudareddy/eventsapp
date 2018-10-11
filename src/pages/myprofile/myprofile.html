@@ -1,0 +1,72 @@
+<!--
+  Generated template for the MyprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title class="text-center">My Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list class="m-t-50">
+    <ion-item>
+      <ion-icon name="ios-person-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="Enter Name" [(ngModel)]="profile.name"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-camera-outline" item-start></ion-icon>
+        <ion-input type="file" accept="image/*" (change)="changeListener($event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-globe-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="Address 1" [(ngModel)]="profile.address1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-globe-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="Address 2" [(ngModel)]="profile.address2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-globe-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="City" [(ngModel)]="profile.city"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-globe-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="State" [(ngModel)]="profile.state"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-globe-outline" item-start></ion-icon>
+      <ion-input type="number" placeholder="Zip Code" [(ngModel)]="profile.zipcode"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-mail-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="Owner Email Id" [(ngModel)]="profile.ownerEmailId"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-mail-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="Primary Contact EmailId" [(ngModel)]="profile.primaryContactEmail"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="ios-mail-outline" item-start></ion-icon>
+      <ion-input type="text" placeholder="Escalation  EmailId" [(ngModel)]="profile.escalationEmailId"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ios-mail-outline" item-start></ion-icon>
+      <ion-input type="number" placeholder="Notification Email Range" [(ngModel)]="profile.notificationEmailRange"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding text-center>
+    <button ion-button color="secondary" (click)="addaccomm(accommData)">
+      <ion-icon name="ios-unlock-outline" class="padding-right5" float-left margin-right></ion-icon>
+      Save
+    </button>
+  </div>
+</ion-content>

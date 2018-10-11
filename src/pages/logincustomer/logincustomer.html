@@ -1,0 +1,60 @@
+<!--
+  Generated template for the LogincustomerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar color="primary">
+          <ion-buttons left>
+                  <button ion-button (click)="goBack()"> <ion-icon name="arrow-round-back"></ion-icon></button>
+              </ion-buttons>
+      <ion-title text-center>Login As Customer</ion-title>
+      
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content  class="bg-trans LoginCon BodyCon">
+
+	<form novalidate (ngSubmit)="login(user)" [formGroup]="user">
+		<div  class="bg-white">
+			<ion-list padding class="m-t-30 padding-bottom0">
+                <ion-item text-center>
+                   
+                </ion-item>
+				<ion-item>
+					<ion-icon name="ios-person-outline" item-start></ion-icon>
+					<ion-input type="number" placeholder="Mobile Number" value="" formControlName="name" [(ngModel)]="username" class="removeBorder"></ion-input>
+				</ion-item>
+                <ion-item *ngIf="user.get('name').hasError('required') && user.get('name').touched">
+                    <span style="color: red" >Please enter phone no..</span>
+                </ion-item>
+				<ion-item>
+					<ion-icon name="ios-lock-outline" item-start></ion-icon>
+					<ion-input type="password" placeholder="Password" formControlName="password" [(ngModel)]="password"></ion-input>
+				</ion-item>
+                <ion-item *ngIf="user.get('password').hasError('required') && user.get('password').touched">
+                    <span style="color: red" >Please enter Password..</span>
+                </ion-item>
+                <div  padding text-center>
+                    <button ion-button  color="secondary" [disabled]="user.invalid"  >
+                        <ion-icon name="ios-unlock-outline" class="padding-right5" float-left margin-right></ion-icon>
+                        Sign In
+                    </button>
+                </div>
+			</ion-list>
+		</div>
+	</form>
+    <!--<div text-center>
+        <button ion-button clear color="danger"  text-capitalize (click)="goTo()">Forgot Password?</button>
+    </div>-->
+
+    <ion-toolbar class="bg-white">
+        <div text-center>
+            <span class="fnt-black">Don't have an account?</span>
+            <a  color="primary" (click)="addPage()"  text-capitalize>Sign Up</a>
+        </div>
+    </ion-toolbar>
+
+</ion-content>

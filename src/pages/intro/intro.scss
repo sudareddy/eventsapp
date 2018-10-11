@@ -1,0 +1,83 @@
+page-intro {
+
+  .GreenLogoTop
+  {
+    align-items: center;
+    margin-top: 2%;
+    img{
+      width: 30%;
+    }
+  }
+
+  .m-t-35
+      {
+          margin-top: 35px !important;
+      }
+      .blue-clr{
+          background-color:#2993EB;
+        }
+
+  .statusbar
+  {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    background: #00CE6F;
+    top: 0px;
+  }
+  button.greentxt
+  {
+    color: #00CE6F;
+  }
+
+  .toolbar-background {
+    background: #fff;
+    border-color: transparent;
+  }
+
+  .slide-zoom {
+    height: 100%;
+  }
+
+  .slide-title {
+    margin-top: 2.8rem;
+  }
+
+  .slide-image {
+    max-height: 50%;
+    max-width: 60%;
+    margin: 18px 0;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #60646B;
+
+    b {
+      color: #000000;
+    }
+  }
+  ion-footer
+  {
+    button
+    {
+      margin: 0 !important;
+    }
+    ion-col
+    {
+      padding: 0 !important;
+    }
+  }
+  ion-footer:before
+  {
+    background: transparent !important;
+    transform: none;
+  }
+
+}

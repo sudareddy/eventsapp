@@ -1,0 +1,83 @@
+<!--
+  Generated template for the MyeventsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title class="text-center">My Events</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list class="m-t-50">
+            <ion-item-divider class="toolbar-title-md">
+                    Event Details
+                  </ion-item-divider>
+        <ion-item> 
+            <ion-icon name="ios-person-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Event Name" [(ngModel)]="event.eventname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-person-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Event Title" [(ngModel)]="event.title"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-mail-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Event Gender" [(ngModel)]="event.gender"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-call-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Event Age Group" [(ngModel)]="event.ageGroup"></ion-input>
+        </ion-item>
+        </ion-list>
+
+  <ion-list>
+    <ion-item-divider class="toolbar-title-md">
+            Event Price
+          </ion-item-divider>
+
+    <ion-item>
+        <ion-icon name="ios-person-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Quantity Start" [(ngModel)]="event.qtystart"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-person-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Quantity End" [(ngModel)]="event.qtyend"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-mail-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Unit of Measurment" [(ngModel)]="event.unitmeasur"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-call-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Price" [(ngModel)]="event.price"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-icon name="ios-person-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Range" [(ngModel)]="event.range"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-person-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Start Date" [(ngModel)]="event.startDate"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-mail-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="End Date" [(ngModel)]="event.endDate"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding text-center>
+      <button ion-button color="secondary" (click)="addaccomm(accommData)">
+        <ion-icon name="ios-unlock-outline" class="padding-right5" float-left margin-right></ion-icon>
+        Save
+      </button>
+    </div>
+</ion-content>

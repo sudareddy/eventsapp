@@ -1,0 +1,1072 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #488aff,
+  secondary:  #00CE6E,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+        green:#1DC747,
+        clr:#FE5751,
+        white:white,
+        white-bg:white,
+        bg-white:#fff,
+        blue:#4AAAD6,
+        bg-blue:#7548A3,
+        menu-bg:#084269,
+        black:black,
+        bg-orange:#D9413C,
+        bg-gray:#ccc,
+        bg:transparent,
+        card-clr:#EFEEEE,
+        bg-header:#3192E4,
+        content-bg:#E6E6E6,
+        fnt-black:#222,
+        fnt-clr:#444,
+        bg-green:#327eff,
+        fnt-bg:#2B98CC,
+        toggle-icon:#E5F8E9,
+        toggle-inner: #01CE6F,
+        orange:#FE9C12,
+
+);
+$text-input-md-highlight-color-invalid: transparent;
+$text-input-md-highlight-color-valid: transparent;
+$text-input-md-show-invalid-highlight: transparent;
+$text-input-md-highlight-color: transparent;
+$text-input-md-show-valid-highlight: transparent;
+
+
+$font20:20px;
+$left:10px;
+$size:0px;
+$margin:100px;
+$width:20%;
+$margin6:0 6px;
+$padding2:0 2px;
+$margin2: 2px 0;
+$margin15: 15px 0;
+$margin10:10px 0;
+$radius:5px;
+$padding13:13px 6px;
+$padding20:0 20px;
+$grid-padding-width:10px;
+
+
+$border-bottom:none;
+$margin-auto:auto;
+$border:1px solid black;
+$gray-border:1px solid #ccc;
+$bg-none:none;
+$pos-relative:relative;
+$hide:hidden;
+$both:both;
+$flt-right:right;
+$inherit:inherit;
+$normal:normal;
+$fnt:1.6rem;
+$sizes:bold;
+
+//font
+//$p-font-size-mobile : 15px;
+//$p-font-size-small  : 16px;
+//$p-font-size-medium : 17px;
+//$p-font-size-large  : 19px;
+//
+//$h1-font-size-mobile: 28px;
+//$h1-font-size-small : 31px;
+//$h1-font-size-medium: 33px;
+//$h1-font-size-large : 36px;
+
+
+$grid-columns:               12 !default;
+$grid-padding-width:         10px !default;
+
+
+// Declare breakpoints for sass-mq.
+$mq-breakpoints: (
+        phone: 20em,
+        tablet: 40em,
+        desktop: 60em
+);
+$grid-padding-widths: (
+   xs: $grid-padding-width,
+   sm: $grid-padding-width,
+   md: $grid-padding-width,
+   lg: $grid-padding-width,
+   xl: $grid-padding-width
+ ) !default;
+$grid-breakpoints: (
+   sm: 0,
+   md: 768px,
+   lg:1024px,
+);
+$grid-max-widths:(
+        sm: 420px,
+        md: 720px,
+        lg: 960px
+);
+
+//@import 'mq';
+//
+//.foo {
+//  @include mq($from: mobile, $until: tablet) {
+//    background: red;
+//  }
+//  @include mq($from: tablet) {
+//    background: green;
+//  }
+//}
+$font-size: (
+        h1: (
+                base: (
+                        font-size: 20px
+                ),
+                tablet: (
+                        font-size: 25px
+                )
+        )
+);
+//h1 {
+//  @include font-size(h1);
+//}
+h1 {
+  font-size: 20px;
+}
+
+
+html.swal2-shown
+{
+  body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)
+  {
+    height: -webkit-fill-available !important;
+  }
+}
+
+
+html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown), body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)
+{
+  height:-webkit-fill-available !important;
+}
+@media (min-width: 40em) {
+  h1 {
+    font-size: 25px;
+  }
+}
+//.sidebar .heading {
+//  @include font-size(h2);
+//}
+
+//@mixin propValue($map) {
+//  @each $prop, $value in $map {
+//    #{$prop}: #{$value};
+//  }
+//}
+
+
+//@mixin typography($element) {
+//
+//  $map: map-get($typography, $element);
+//  $base: map-get($map, base);
+//
+//  @include propValue($base);
+//
+//  $mq: map-remove($map, base);
+//
+//  @each $bp, $attr in $mq {
+//    @include mq($bp) {
+//      @include propValue($attr);
+//    }
+//  }
+//
+//}
+
+
+
+
+
+
+
+//header
+
+ion-header
+{
+  min-height:$font20+70 !important;
+}
+
+
+
+//font
+
+.font-size20
+{
+  font-size:$font20;
+}
+$p-font-sizes: (
+        null  : 15px,
+        480px : 16px,
+        640px : 17px,
+        1024px: 19px
+);
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+p {
+  @include font-size($p-font-sizes);
+}
+$h1-font-sizes: (
+        null  : 28px,
+        480px : 31px,
+        640px : 33px,
+        1024px: 36px,
+);
+
+h1 {
+  @include font-size($h1-font-sizes);
+}
+p, ul, ol {
+  @include font-size($p-font-sizes);
+}
+$breakpoints: (
+        small : 480px,
+        medium: 700px, // Previously 640px
+        large : 1024px
+);
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+
+//color
+
+.white
+{
+  color:color($colors,white) !important;
+}
+.fnt-blue
+{
+  color:color($colors, blue);
+}
+.fnt-blue-bg
+{
+  background-color:color($colors, blue);
+}
+.fnt-white
+{
+  color:color($colors,white);
+}
+.blue-bg
+{
+  background-color: color($colors,bg-blue);
+}
+.fnt-black
+{
+  color:color($colors,black);
+}
+.orange-bg
+{
+  background-color: color($colors,bg-orange);
+}
+.gray-bg
+{
+  background-color: color($colors,bg-gray);
+}
+.card-bg
+{
+  background-color: color($colors,card-clr);
+}
+.bg-white
+{
+  background-color: color($colors,white-bg);
+}
+.bg-trans
+{
+  background-color: color($colors,bg) !important;
+}
+.bg-white
+{
+  background-color: color($colors,bg-white) !important;
+
+}
+.header-bg
+{
+  background-color:color($colors, bg-header) !important;
+}
+.content-bg
+{
+  background-color: color($colors,content-bg) !important;
+}
+.green-bg
+{
+  background-color:color($colors,bg-green) !important;
+}
+.blue{
+  background-color: color($colors,menu-bg) !important;
+}
+.bg{
+  background-color: color($colors,fnt-bg) !important;
+}
+.toggle-md.toggle-checked .toggle-icon
+{
+  background-color: color($colors,toggle-icon) !important;
+}
+.toggle-md.toggle-checked .toggle-inner
+{
+  background-color: color($colors,toggle-inner) !important;
+}
+
+
+
+
+  //font
+.fnt-12
+{
+  font-size:$font20 - 8!important; ;
+}
+.fnt-20
+{
+  font-size:$font20;
+}
+.fnt-25
+{
+  font-size:$font20+5;
+}
+.fnt-35
+{
+  font-size:$font20+15 !important;
+}
+.font-20
+{
+  font-size:$font20;
+  color:color($colors, primary);
+}
+.border-black
+{
+  border:$border-bottom;
+}
+ion-header
+{
+  ion-navbar
+  {
+    ion-icon
+    {
+      font-size: 2.4rem !important;
+    }
+  }
+
+
+
+}
+ion-list
+{
+  ion-item
+  {
+    ion-label
+    {
+      color: color($colors, dark) !important;
+      text-align: left !important;
+    }
+  }
+
+}
+
+ion-col
+{
+  ion-label
+  {
+    color: color($colors, dark) !important;
+  }
+}
+
+
+ion-menu
+{
+  ion-label
+  {
+    text-align: left !important;
+    color:#fff !important;
+    font-size: 1.6rem !important;
+    font-weight: normal !important;
+  }
+}
+
+
+//padding
+
+.padding-top20
+{
+  padding-top:$font20;
+}
+.p-t-60
+{
+  padding-top:$font20+40;
+}
+.padding10
+{
+ padding:$grid-padding-width !important;
+}
+.padding-bottom0
+{
+  padding-bottom:$size !important;
+}
+.padding0
+{
+  padding:$size;
+}
+.p-l-10
+{
+  padding-left:$left;
+}
+.p-l-0
+{
+ padding-left:$size;
+}
+.padding-right5
+{
+  padding-right:$font20 - 15;
+}
+.padding2
+{
+  padding: $padding2;
+}
+.p-l-5
+{
+  padding-left: $radius !important;
+}
+
+
+
+
+
+
+//margin
+
+.margin0
+{
+  margin:$size;
+}
+.m-t-30
+{
+  margin:$font20+10;
+}
+.m-t-150
+{
+  margin-top:$font20+130;
+}
+.m-t-60
+{
+  margin-top: $font20+40;
+}
+.m-t-120
+{
+  margin-top:$font20+100;
+}
+.m-l-150
+{
+  margin-left:$margin+50;
+}
+.m-l-95
+{
+  margin-left:$margin -5 !important;
+}
+.m-l-85
+{
+  margin-left:$margin -15 !important;
+}
+.m-l-160
+{
+  margin-left:$margin+60;
+}
+.m-l-95
+{
+  margin-left:$margin -5;
+}
+.margin-left5
+{
+  margin-left:$margin -95;
+}
+.margin-left10
+{
+  margin-left:$left;
+}
+.m-r-12
+{
+  margin-right:$left+2;
+}
+.margin-auto
+{
+  margin:$margin-auto;
+}
+.margin6
+{
+  margin: $margin6;
+}
+.m-t-b-10
+{
+  margin-top: $left;
+  margin-bottom: $left;
+}
+.m-b-25
+{
+  margin-bottom:$font20+5;
+}
+
+
+
+
+//height
+
+.height15
+{
+  height:$left+5;
+}
+.height50
+{
+  height:$left+40;
+}
+.height100
+{
+  height:$left+90;
+}
+.h-20
+{
+  height:$left+10;
+}
+.height20
+{
+  height:$left+10;
+}
+
+
+//width
+.width40
+{
+  width:$width+20;
+}
+.width20
+{
+  width:$width;
+}
+.width60
+{
+  width:$width+40;
+}
+.width100
+{
+  width:$width+80;
+}
+.w-20
+{
+  width:$width;
+}
+.w-25
+{
+  width:$width+5;
+}
+.w-50
+{
+  width:$width+30;
+}
+.width40
+{
+  width:$width+20;
+}
+.width75
+{
+  width:$width+55;
+}
+.width95
+{
+  width:$width+75;
+}
+.width15
+{
+  width:$width - 5 !important;
+}
+
+//content-class
+
+.border-label
+{
+  border:$border;
+  padding:$radius;
+  border-radius:$radius+1;
+}
+.FabList .LeftCon label
+{
+  background-color:color($colors,bg-white) !important;
+}
+
+
+.InputCon
+{
+
+  ion-list
+  {
+
+    ion-item
+    {
+
+      .item-inner
+      {
+        margin-left:$size !important;
+      }
+      ion-input
+      {
+        border-bottom:$gray-border !important;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+.LoginCon
+{
+  ion-list
+  {
+    ion-item
+    {
+      padding-left:$size;
+
+    }
+  }
+
+}
+
+
+.ReceivedEventCon ion-item ion-input
+{
+  border-bottom: $gray-border !important;
+}
+.ReceivedEventCon ion-thumbnail img
+{
+  width:$font20+40;
+  height: $font20+40;
+}
+.ReceivedEventCon ion-card-content ion-item ion-label
+{
+  margin:$size;
+}
+ion-col.line-hgt45
+{
+  line-height:$font20+25;
+}
+.border-bottom-blk
+{
+  border:$gray-border;
+}
+.ReceivedEventCon ion-thumbnail
+{
+  margin:$radius;
+  min-width:$font20+40;
+  min-height:$font20+40;
+}
+.SideMenuCon .scroll-content
+{
+  width:$width+80 !important;
+}
+.ReceivedEventCon ion-item
+{
+  //padding-left:$size;
+}
+.InputCon ion-item.item.item-block.item-md.item-input.ng-untouched.ng-pristine.ng-valid.input-has-focus.item-input-has-focus
+{
+  border-bottom:$bg-none !important;
+}
+.InputCon .list-md .item-input:last-child
+{
+  border-bottom: $bg-none !important;
+}
+.MenuFooter ion-list ion-item
+{
+  background:$bg-none !important;
+  min-height:$font20+15;
+}
+.SideMenuCon .item.item-block
+{
+  min-font-size:$font20+15 !important;
+  //height:$font20+15 !important;
+}
+.MenuFooter .toolbar-background-md
+{
+  background:$bg-none !important;
+}
+.toolbar-md {
+  padding: 4px;
+  min-height: 65px;
+}
+.Menuheader.item-md
+{
+ p{
+   color:#fff !important;
+ }
+}
+
+//.sliderCon .slide-zoom
+//{
+//  height:$margin !important;
+//}
+//.swiper-slide img
+//{
+//  height:$margin !important;
+//}
+.letter-head
+{
+  position:$pos-relative;
+  clear:$both;
+  overflow:$hide;
+}
+.qr-code
+{
+  float:$flt-right;
+  width:$width;
+}
+ion-footer
+{
+  min-height: $font20 - 2  !important;
+}
+
+ion-col.fnt-black.col
+{
+  color:color($colors,fnt-clr) !important;
+}
+ion-menu ion-content.content
+{
+  background: $bg-none !important;
+}
+ion-menu .menu-inner
+{
+  //background: color($colors,menu-bg) !important;
+}
+.MenuFooter ion-list ion-item ion-label
+{
+  margin:$margin2;
+  color:color($colors,bg-white) !important;
+}
+.ReceivedEventCon ion-col ion-label
+{
+  //margin:$margin15;
+  text-overflow:$inherit;
+  white-space: $normal;
+}
+.ActiveEventCon h3
+{
+  font-size: $left+8;
+  color:color($colors,fnt-clr) !important;
+}
+.ReceivedEventCon ion-card
+{
+  margin:$margin10;
+  border-radius:$radius+11;
+  width:$width+80;
+}
+.ReceivedEventCon ion-card-content
+{
+  padding:$padding13;
+}
+.ReceivedEventCon ion-card-content ion-item .item-button
+{
+  //padding: $padding20;
+  height:$font20;
+}
+.EventCon{
+  height:$margin !important;
+  width:$margin !important;
+}
+.toolbar-md {
+  padding:$radius - 1 ;
+  min-height:$font20+80 !important;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+  color: #424242;
+  background-color: transparent;
+  color: white !important;
+}
+.toolbar-title-md{
+  color:color($colors,white) !important;
+}
+span,ul,ol{
+  font-size: $fnt !important;
+}
+.fnt-bold
+{
+  font-weight: $sizes !important;
+}
+.fnt{
+  font-size:$fnt+0.3 !important;
+  font-weight:$sizes !important;
+}
+.fnt-16
+{
+  font-size: 16px !important;
+}
+// Notification
+.bell
+{
+  margin: 0 6px;
+  padding: 0 2px;
+  min-width: 44px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.notify
+{
+  position: absolute;
+  z-index: 1;
+  top:5px;
+  right: 1px;
+  width: 13px !important;
+  height:13px !important;
+  font-size: 10px;
+  border-radius:50% !important;
+  padding:2px;
+  font-weight:bold;
+}
+.pos-rel
+{
+  position: relative;
+}
+// App iOS Variables8
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+
+//for side menu animation scss
+
+// px to vw convter
+@function get-vw($target) {
+  $vw-context: (320*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+$btncolor:        #B1234C;
+.ico-big
+{
+	color: $btncolor;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.gradient-bg {
+  background: #204f5f !important;
+  background: -moz-radial-gradient(right, ellipse cover,  #204f5f 0%, #091b31 100%) !important;
+  background: -webkit-radial-gradient(right, ellipse cover,  #204f5f 0%,#091b31 100%) !important;
+  background: radial-gradient(ellipse at right,  #204f5f 0%,#091b31 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#204f5f', endColorstr='#091b31',GradientType=1 ) !important;
+}
+.tparent {
+  background-color: transparent !important;
+  .toolbar-background-ios {
+    border-color: transparent !important;
+    background: transparent !important;
+  }
+}
+
+.imgBackground {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.iconBackground {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// colors
+.white {
+  color: #fff !important;
+}
+
+.font18 {
+  font-size: 18px;
+  font-size: get-vw(18px);
+}
+
+
+ion-nav{
+  transition: all .5s ease-out 0s !important;
+  //transition: all .75s cubic-bezier(.78,.37,.62,.86)!important;
+}
+
+.ion-page {
+  transition: transform .5s ease-out 0s !important;
+  //transform: scale3d(1, 1, 1) rotateY(0) translateX(0) !important;
+}
+
+
+.show-menu + ion-nav{
+  perspective: 320px;
+  background: color($colors,menu-bg);
+
+  .ion-page {
+    transform: scale3d(0.9, 0.9, 0.9) rotateY(0) translateX(80%) !important;
+    //transition: all .50s cubic-bezier(.78,.37,.62,.86) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden !important;
+
+    ion-content {
+      overflow: hidden !important;
+    }
+  }
+}
+
+.nav-decor {
+  @extend .tparent;
+}
+
+.ios {
+  .menu-content-reveal {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
+  }
+}
+.menu-inner {
+  @extend .tparent;
+  ion-content {
+    @extend .tparent;
+  }
+  width: 80% !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+ion-app.ios {
+  @extend .gradient-bg;
+}
+
+.menu-user-image {
+  @extend .imgBackground;
+  height:  get-vw(60px);
+  width:  get-vw(60px);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+ion-avatar {
+  position: relative;
+  ion-badge {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    padding: 3px 5px;
+    min-height: 22px;
+    min-width: 22px;
+    border: 2px solid #fff;
+  }
+}
+
+// End side menu animation scss
+
+
+//Sweet alert 2
+
+.swal2-header
+{
+  span{
+    font-size: 1rem !important;
+  }
+}

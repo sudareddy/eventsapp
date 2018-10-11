@@ -1,0 +1,94 @@
+<!--
+  Generated template for the AbouteventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+      <ion-buttons left>
+          <button ion-button (click)="goBack()"> <ion-icon name="arrow-round-back"></ion-icon></button>
+      </ion-buttons>
+    <ion-title text-center>About Event</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="event-list no-btm-border">
+        <div class="event-img">
+           <img src="img/event-banner.jpg">  
+           <div class="shadow">&nbsp;</div>
+        </div>
+        
+        <div class="event-title top100">
+          <p>WEDDING AND BRIDAL</p>
+        </div>
+
+        <div class="profile">
+          
+            <ion-list>
+
+              <ion-item>
+
+                  <h4 class="txt-pink"><span class="grey-txt font-size13 padng-rgt5">Hosted by</span>Clara Winston</h4>
+
+              </ion-item>
+
+           </ion-list>
+
+        </div>  
+
+        <div class="About-Event" padding>
+          <h4 class="heading-txt">About Event : </h4>
+         
+         <p>
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+         </p>
+         </div>
+
+        <div class="event-details">
+          
+          <ion-list>
+
+           
+
+             <ion-item>
+              
+                <ion-icon name="ios-pin-outline" item-left></ion-icon>
+               Address
+                
+            </ion-item>
+             <ion-item>
+                       
+                <ion-item>
+                  <ion-icon name="ios-person-outline" item-start></ion-icon>
+                  <ion-input type="text" placeholder="Enter Time(10.00 AM - 12.00PM)" [(ngModel)]="signUpData.firstname"></ion-input>
+              </ion-item>
+            </ion-item>
+
+             <ion-item>
+              
+              <ion-item>
+                <ion-icon name="ios-person-outline" item-start></ion-icon>
+                <ion-input type="text" placeholder="Enter Attendants" [(ngModel)]="signUpData.firstname"></ion-input>
+            </ion-item>
+
+            </ion-item>
+
+           </ion-list>
+           <div padding text-center>
+            <button ion-button  color="secondary" (click)="signUp(signUpData)">
+            <ion-icon name="ios-unlock-outline" class="padding-right5" float-left margin-right></ion-icon>
+            Submit
+            </button>
+            </div>
+        </div>
+
+</div>
+
+
+
+</ion-content>

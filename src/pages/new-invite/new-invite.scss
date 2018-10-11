@@ -1,0 +1,332 @@
+page-new-invite {
+  h3
+  {
+    padding-left: 8px;
+  }
+  ion-label
+  {
+    text-align: left !important;
+    font-size: 1.6rem !important;
+    font-weight: normal !important;
+  }
+  ion-popover
+  {
+    ion-label
+    {
+      color: #222 !important;
+    }
+  }
+  ion-col
+  {
+    position: initial !important;
+    ion-label
+    {
+      color: #999 !important;
+    }
+  }
+  ion-input.noLftPad
+  {
+     input.text-input
+     {
+       padding-left: 0;
+       margin-left: 5px !important;
+     }
+  }
+
+  .white-bg
+  {
+    background-color: white;
+  }
+  select {
+   
+    background-color:#fbf9f9;;
+    color:black;
+}
+  .fnt-black
+{
+	color:#524f4f;
+}
+.fnt-20
+{
+	font-size:20px;
+}
+.fnt-t-20
+{
+	top:-20px;
+}
+.border-btm
+{
+	border-bottom:1px solid #ccc;
+}
+.text-right
+{
+	text-align:right;
+}
+.p-b-10
+{
+	padding-bottom: 10px;
+}
+.p-l-10
+{
+	 padding-left: 10px;
+}
+.top-20
+{
+	top:-20px;
+}
+.gray-bg
+{
+	background-color:#fbf9f9;
+}
+.padding-left
+{
+	padding-left:5px;
+}
+.padding-right10
+{
+	padding-right:10px;
+}
+.text-left
+{
+	text-align:left;
+}
+ion-header {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    min-height: 100px;
+}
+ion-fab {
+   
+    position: fixed;
+    z-index: 999;
+}
+.toolbar-title-md {
+    color: white;
+}
+.float-lft
+{
+	float:left;
+}    
+.m-l-10
+{
+    margin-left:10px;
+}
+.m-l-120
+{
+    margin-left:120px;
+}
+.font20
+{
+    font-size:20px;
+}
+.LeftCon
+{
+  float: left;
+  width: 70%;
+  margin-top: 13px;
+  padding: 5px;
+  /* padding-top: 20px; */
+    padding-right: 10px;
+  /* margin-right: 10px; */
+  text-align: right;
+  /* border: 1px solid black; */
+
+}
+.RgtCon{
+  float: right;
+  width: 30%;
+  /* margin-left: 5px; */
+  padding-left: 5px;;
+}
+.InviteCon ion-fab-list
+{
+    width:250px;
+    right:0;
+}
+.InviteCon .FabList {
+    width: 100% !important;
+}
+  .FabList {
+    width: 100% !important;
+    clear: both;
+  }
+.fab-md-secondary {
+    color: #fff;
+    background-color: #00CE6F;
+    z-index: 1000;
+}
+  .FabMainBtn
+  {
+    bottom: 15px;
+  }
+
+.select-bx .select-text
+.select-bx .select-text
+{
+  margin-left: 35px !important;
+}
+  .item-input-has-focus .label-md[floating], .input-has-focus .label-md[floating], .item-input-has-value .label-md[floating], .input-has-value .label-md[floating] {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+    margin-left: 10px;
+  }
+
+  ion-fab-list
+  {
+    width: 1000px;
+    height: 1000px;
+    background: rgba(255,255,255,0.8);
+    right: -15px !important;
+    margin: 0;
+
+    .FabListCon
+    {
+      right: 12px !important;
+      min-width: 190px !important;
+      position: absolute;
+      /* margin: 72px 0; */
+      bottom: 80px;
+    }
+  }
+  .selectContact
+  {
+    ion-label
+    {
+      padding: 0;
+      text-align: center !important;
+    }
+    .AddContactBtn
+    {
+      ion-avatar
+      {
+        img
+        {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+
+  }
+  .img-content
+  {
+    width: 25%;
+    //float: left;
+  }
+  .magn-btm60
+  {
+    margin-bottom: 60px;
+  }
+  .label-md
+  {
+    margin:0px !important;
+  }
+  ion-item
+  {
+    padding-left: 8px !important;
+    background-color:transparent;
+  }
+.Event-label
+{
+  margin-left: 10px !important;
+  padding: 5px !important;
+}
+  .FabList .LeftCon label
+  {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    padding:3px !important;
+    border-radius: 3px;
+    background-color: #FFF;
+    //width: 70%;
+  }
+  .item-label-stacked .text-input-md, .item-label-floating .text-input-md {
+    margin-left: 40px !important;
+  }
+  .p-l-20
+  {
+    padding-left: $font20 !important;
+  }
+  .Event-clr {
+   color: #999;
+  }
+  .m-l-38
+  {
+    margin-left:$font20+18 !important;
+  }
+  .select-text
+  {
+    margin-left:$font20+18 !important;
+  }
+  //input{
+  //  font-size: 1.8rem !important;
+  //  font-weight: 900 !important;
+  //}
+  //.item-label-stacked ion-datetime, .item-label-floating ion-datetime {
+  //  font-size: 1.8rem !important;
+  //  font-weight: 600 !important;
+  //}
+
+
+  ion-scroll[scrollX] {
+    white-space: nowrap;
+    height: 60px;
+    overflow: hidden;
+
+    .scroll-item {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .selectable-icon{
+      margin: 10px 20px 10px 20px;
+      color: red;
+      font-size: 100px;
+    }
+
+    ion-avatar img{
+      display:inline ;
+    }
+  }
+
+  ion-scroll[scroll-avatar]{
+    height: 60px;
+  }
+  .Event-label{
+    margin-left:20px !important;
+  }
+  .margin-left-10{
+    margin-left:10px !important;
+  }
+
+  .selectContact
+  {
+    ion-label
+    {
+      padding: 0;
+      text-align: center !important;
+      margin-left:10px !important;
+    }
+    .AddContactBtn
+    {
+      ion-avatar
+      {
+        img
+        {
+          width: 35px;
+          height: 35px;
+          padding-right:0px !important;
+        }
+      }
+    }
+
+  }
+  .p-r-0{
+    padding-right:0px !important;
+  }
+
+
+}

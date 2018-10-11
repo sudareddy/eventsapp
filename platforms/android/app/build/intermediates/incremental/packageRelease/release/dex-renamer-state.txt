@@ -1,0 +1,4 @@
+#Thu Oct 11 00:51:42 IST 2018
+base.0=G\:\\ionic\\backup app\\02102018\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

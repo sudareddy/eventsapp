@@ -1,0 +1,59 @@
+@font-face {
+    font-family: RobotoLight;
+    src: url("../assets/fonts/roboto-light.woff");
+}
+@font-face {
+    font-family:UbuntuLight;
+    src:url("../assets/fonts/light/ubuntu_light.woff");
+}
+@font-face {
+    font-family:UbuntuMedium;
+    src:url("../assets/fonts/medium/ubuntu_medium.woff");
+}
+
+
+body,ion-content,ion-item,ion-title
+{
+ font-family: UbuntuLight !important;
+}
+h3,h4,p,a,span,label,li,input,select,textarea,button
+{
+    font-family: UbuntuLight !important;
+}
+
+.font-regular {
+    font-family: Ubuntu Regular;
+}
+.font-light {
+    font-family: Ubuntu Light;
+}
+
+ion-navbar.toolbar:before {
+    background: linear-gradient(#28CF81 80%,#3498DB 20%);
+    transform: rotate(-2deg);
+    transform-origin: 0% 50% 0;
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    left: -10%;
+    z-index: -1;
+}
+ion-footer:before {
+    background: linear-gradient(#dfdfdf 5%,#3498DB 5%) !important;
+    transform: rotate(-3deg);
+    width: 120% !important;
+    height: 140% !important;
+    top: 30% !important;
+    z-index: -1;
+}
+ion-footer.MenuFooter:before
+{
+    background: transparent !important;
+    transform: none;
+}
+
+
+
+
+

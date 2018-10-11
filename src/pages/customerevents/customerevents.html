@@ -1,0 +1,131 @@
+<!--
+  Generated template for the CustomereventsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title class="text-center">My Events</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list class="m-t-50">
+        <ion-item-divider class="toolbar-title-md">
+            Event Details
+          </ion-item-divider>
+        <ion-item> 
+            <ion-icon name="ios-person-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Event Title" [(ngModel)]="event.title"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-person-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Event Name" [(ngModel)]="event.name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-mail-outline" item-start></ion-icon>
+            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="event.date"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-call-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Event Time" [(ngModel)]="event.time"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-call-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Address 1" [(ngModel)]="event.address1"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-call-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Address 2" [(ngModel)]="event.address2"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-call-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Zipcode" [(ngModel)]="event.zipcode"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-call-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="state" [(ngModel)]="event.state"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-call-outline" item-start></ion-icon>
+            <ion-input type="text" placeholder="Country" [(ngModel)]="event.country"></ion-input>
+        </ion-item>
+        </ion-list>
+
+  <ion-list>
+    <ion-item-divider class="toolbar-title-md">
+            Event Info
+          </ion-item-divider>
+
+    <ion-item>
+        <ion-icon name="ios-person-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Gender" [(ngModel)]="event.gender"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-person-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Age" [(ngModel)]="event.age"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-mail-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Event Size" [(ngModel)]="event.size"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="ios-call-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Adult Count" [(ngModel)]="event.adultcount"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-icon name="ios-person-outline" item-start></ion-icon>
+        <ion-input type="text" placeholder="Kids" [(ngModel)]="event.kids"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+      <ion-item-divider class="toolbar-title-md">
+              Event Host Details
+            </ion-item-divider>
+  
+      <ion-item>
+          <ion-icon name="ios-person-outline" item-start></ion-icon>
+          <ion-input type="text" placeholder="First Name" [(ngModel)]="event.firstname"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="ios-person-outline" item-start></ion-icon>
+          <ion-input type="text" placeholder="Last Name" [(ngModel)]="event.lastname"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="ios-mail-outline" item-start></ion-icon>
+          <ion-input type="text" placeholder="Phone Number" [(ngModel)]="event.phoneno"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="ios-call-outline" item-start></ion-icon>
+          <ion-input type="text" placeholder="Email Id" [(ngModel)]="event.emailid"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-icon name="ios-person-outline" item-start></ion-icon>
+          <ion-input type="text" placeholder="Kids" [(ngModel)]="event.kids"></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-icon name="ios-person-outline" item-start></ion-icon>
+            <ion-select [(ngModel)]="event.eventReq">
+              <ion-option value="Decoration" selected>Decoration</ion-option>
+              <ion-option value="Kitchen">Kitchen</ion-option>
+            </ion-select>
+          </ion-item>
+    </ion-list>
+
+  <div padding text-center>
+      <button ion-button color="secondary" (click)="addaccomm(accommData)">
+        <ion-icon name="ios-unlock-outline" class="padding-right5" float-left margin-right></ion-icon>
+        Save
+      </button>
+    </div>
+</ion-content>
+

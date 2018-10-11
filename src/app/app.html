@@ -1,0 +1,38 @@
+<ion-menu   [content]="content" side="left" class="tparent" >
+
+  <ion-content class="blue white SideMenuCon tparent">
+      <button menuClose ion-item (click)="userInfo()" class="bg-trans">
+          <ion-item class="Menuheader">
+              <ion-avatar>
+                  <img src="assets/imgs/profile.png" alt="" class="margin-auto EventCon bg-trans margin-top20" />
+              </ion-avatar>
+              
+              <div class="border-black border-btm">
+                  <p text-uppercase  text-center class="color-gray">Hi {{firstName}}</p>
+                  <!--<p text-uppercase text-center class="color-gray">{{profile.lastname}}</p>-->
+                  <!--<p text-uppercase  text-center class="color-gray">{{profile.phone}}</p>-->
+              </div>
+          </ion-item>
+          <!--<div layout="row"  layout-align="start center" class="border-black border-btm">-->
+              <!--<p text-uppercase class="font-clr p-l-0">{{firstName}}<ion-icon name="create" class="font-clr fnt-20 p-l-7" ></ion-icon></p>-->
+          <!--</div>-->
+      </button>
+      <!--<button menuClose ion-item class="bg-trans" (click)="openPage(user)">-->
+      <!--</button>-->
+    <ion-list class="p-l-10">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p.component)" class="font-clr tparent">
+        {{p.title}}
+      </button>
+      <button menuClose ion-item (click)="logout()" class="font-clr tparent fnt-14">
+        LOGOUT
+    </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>
+
+
+

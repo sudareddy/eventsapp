@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+  
+    <img src="assets/imgs/topbar.jpg" />
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  
+  <div padding class="m-t-35" text-center>
+      <!--<div class="input-field col s12">
+          <input id="country" type="text" class="validate filter-input" [(ngModel)]=query (keyup)=filter()>
+          <label for="country">Country</label>
+        </div>
+        <div class="suggestions" *ngIf="filteredList.length > 0">
+            <ul *ngFor="let item of filteredList">
+                <li >
+                    <a (click)="select(item)">{{item}}</a>
+                </li>
+            </ul>
+        </div>-->
+
+        <!--<ion-list padding>
+            <ion-item class="color-white">
+                <ion-icon name="ios-mail-outline" item-start class="color-white"></ion-icon>
+                <ion-input type="text" placeholder="Search for event" class="color-white" [(ngModel)]="country1"></ion-input>
+            </ion-item>
+        </ion-list>-->
+    <ion-searchbar 
+    [(ngModel)]="query" 
+    [showCancelButton]="true" 
+    (ionInput)="filter()" 
+    (ionCancel)="dismiss()"
+    placeholder="Start typing and select ...">
+    </ion-searchbar>
+        <ion-list>
+          <ion-item *ngFor="let item of filteredList" 
+          (click)="select(item)">
+          {{ item }}
+          </ion-item>
+          </ion-list>
+    <button ion-button color="light" (click)="searchEvent()">
+        Search
+    </button>
+</div>
+
+  <button ion-button (click)="createEvent()">Create My Event</button>
+
+  <button ion-button (click)="vendorLogin()">Login as Vendor</button>
+
+</ion-content>
+
